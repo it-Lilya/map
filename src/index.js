@@ -3,9 +3,9 @@ export default class ErrorRepository {
     this.members = new Map([[1, 'Ошибка 1']]);
   }
 
-  transalate(codeErr) {
-    if (this.members.has(codeErr)) {
-      return this.members.get(codeErr);
+  transalate(code) {
+    if (this.members.has(code)) {
+      return this.members.get(code);
     }
     return 'Unknown error';
   }
